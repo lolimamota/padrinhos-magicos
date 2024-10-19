@@ -1,0 +1,28 @@
+%btn {
+    color: $text-color;
+    border-radius: 1rem;
+}
+
+header {
+    background-color: $bg-color1;
+
+    ul {
+        @include flex($gap: 2rem);
+
+        li {
+            button{
+                @extend %btn;
+                padding: 1rem 3rem;
+                background-color: transparent;
+            }
+
+            &:nth-child(1) {
+                button {
+                    @extend %btn;
+                    background-color: $btn-acess;
+                    padding: 1rem 4rem;
+                }
+            }
+        }
+    }
+}

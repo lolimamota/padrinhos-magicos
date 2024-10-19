@@ -1,0 +1,10 @@
+.container{
+    width: 100%;
+    max-width: 90vw;
+    margin: 0 auto;
+    padding: 2rem 2%;
+}
+
+header .container{
+    @include flex($justify: space-between , $align: center);
+}
