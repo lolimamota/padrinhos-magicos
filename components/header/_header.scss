@@ -5,6 +5,9 @@
 
 header {
     background-color: $bg-color1;
+    img{
+        width: 20rem;
+    }
 
     ul {
         @include flex($gap: 2rem);
@@ -14,10 +17,12 @@ header {
                 @extend %btn;
                 padding: 1rem 3rem;
                 background-color: transparent;
+                border: solid 1px;
             }
 
             &:nth-child(1) {
                 button {
+                    border: none;
                     @extend %btn;
                     background-color: $btn-acess;
                     padding: 1rem 4rem;
